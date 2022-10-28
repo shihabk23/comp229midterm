@@ -1,0 +1,71 @@
+<!-- ------------------------ -->
+<!-- ADD the code for Add form HERE -->
+<!-- ------------------------ -->
+<% include ../partials/header.ejs %>
+
+<!-- MAIN CONTENT -->
+<div class="container" id="modal">
+  <div class="row modal-content">
+    <div class="col-md-offset-3 col-md-6">
+      <h1><%= title %></h1>
+      <form class="form" method="post">
+        <div class="form-group">
+          <label for="IdTextField">Product ID</label>
+          <input
+            type="text"
+            class="form-control"
+            id="IdTextField"
+            placeholder="Product id"
+            name="Productid"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="NameTextField">Product name </label>
+          <input
+            type="text"
+            class="form-control"
+            id="NameTextField"
+            placeholder="Product Name"
+            name="Productname"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="DeptTextField">Description</label>
+          <input
+            type="text"
+            class="form-control"
+            id="AuthorDeptTextField"
+            placeholder="Description"
+            name="Description"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="SubTextField">Price</label>
+          <input
+            type="text"
+            class="form-control"
+            id="SubTextField"
+            placeholder="Price"
+            name="Price"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+          <i class="fa fa-check-square-o"></i> Submit
+        </button>
+        <a href="/products" class="btn btn-warning"
+          ><i class="fa fa-undo"></i> Cancel</a
+        >
+      </form>
+    </div>
+  </div>
+</div>
+
+<% include ../partials/footer.ejs %>
